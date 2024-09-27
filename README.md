@@ -8,4 +8,4 @@
 
 I'm a Software engineer and have experience with Python, Java, SQL, AKS, PowerBI
 
-![My Favorite Meme]([https://link.to/your/favorite/meme.jpg](https://images.app.goo.gl/q52BaEf57SgHFQFU9))
+![My Favorite Meme](https://images.app.goo.gl/q52BaEf57SgHFQFU9)
