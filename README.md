@@ -6,6 +6,7 @@
 
 ## Technical Background
 
-I'm a Software engineer and have experience with Python, Java, SQL, AKS, PowerBI
+- I'm a Software engineer and have experience with Python, Java, SQL, AKS, PowerBI
 
-![Favorite Meme](https://i.imgur.com/w3duR07.png)
+## Favourite Meme
+![Favorite Meme](https://blog.zegocloud.com/wp-content/uploads/2024/02/programming-meme-16.jpg)
