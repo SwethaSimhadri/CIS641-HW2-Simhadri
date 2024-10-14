@@ -20,67 +20,81 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 30px;
+            padding: 20px 50px;
             background-color: rgba(0, 0, 0, 0.8);
         }
         .logo {
-            font-size: 1.8rem;
+            font-size: 2rem;
             font-weight: bold;
             color: #fff;
         }
         nav a {
             color: #fff;
-            margin-left: 15px;
+            margin-left: 20px;
             text-decoration: none;
             font-weight: 600;
         }
         .container {
             text-align: center;
-            padding: 80px 20px;
+            padding: 100px 20px;
         }
         h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
+            font-size: 3.5rem;
+            margin-bottom: 10px;
         }
         p {
-            font-size: 1.1rem;
-            margin-bottom: 30px;
+            font-size: 1.2rem;
+            margin-bottom: 50px;
         }
         .btn-container a {
             text-decoration: none;
             color: #fff;
             background-color: #24D4EA;
-            padding: 10px 25px;
-            border-radius: 25px;
+            padding: 15px 30px;
+            border-radius: 30px;
             font-weight: 600;
             margin: 0 10px;
         }
-        .experience, .projects, .interests, .skills, .team-website, .project-overview {
-            padding: 30px 20px;
+        section {
+            padding: 20px 20px; /* Reduced padding */
+            margin-bottom: 10px; /* Reduced gap between sections */
         }
         h2 {
-            font-size: 2.2rem;
-            margin-bottom: 20px;
+            font-size: 2.5rem;
+            margin-bottom: 20px; /* Reduced gap below heading */
         }
         .exp-item, .proj-item, .int-item, .ski-item, .team-item, .overview-item {
-            margin-bottom: 20px;
+            margin-bottom: 20px; /* Reduced margin for items */
             background-color: rgba(255, 255, 255, 0.1);
-            padding: 15px;
-            border-radius: 10px;
+            padding: 15px; /* Reduced padding */
+            border-radius: 15px;
         }
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 30px;
             background-color: rgba(0, 0, 0, 0.8);
             color: #fff;
-            margin-top: 30px;
+            margin-top: 50px;
         }
         .contact-item a {
             color: #24D4EA;
             text-decoration: none;
         }
-        #contact {
-            padding: 30px 20px;
+        /* Side-by-side layout */
+        .main-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .main-content {
+            flex: 3;
+            padding: 20px;
+        }
+        .contact {
+            flex: 1;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-left: 20px; /* Space between main content and contact */
         }
     </style>
 </head>
@@ -97,14 +111,6 @@
         </nav>
     </header>
 
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-item">
-            <p>Email: <a href="mailto:simhadrs@mail.gvsu.edu">simhadrs@mail.gvsu.edu</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/swethasarayu-simhadri-399574179/" target="_blank">LinkedIn Profile</a></p>
-        </div>
-    </section>
-
     <div class="container">
         <h1>Hello, I'm Swethasarayu Simhadri</h1>
         <p>A passionate software engineer and aspiring full-stack developer with experience in building modern web applications.</p>
@@ -116,50 +122,62 @@
         </div>
     </div>
 
-    <section id="experience" class="experience">
-        <h2>Experience</h2>
-        <div class="exp-item">
-            <p>I'm a software engineer with two years of experience at Optum, where I specialized in developing web applications. During my tenure, I contributed to various projects that enhanced healthcare technology solutions. I gained valuable experience working with modern web technologies and frameworks, collaborating in agile teams, and delivering robust solutions to meet the complex needs of the healthcare industry.</p>
-        </div>
-    </section>
+    <div class="main-container">
+        <div class="main-content">
+            <section id="experience" class="experience">
+                <h2>Experience</h2>
+                <div class="exp-item">
+                    <p>I'm a software engineer with two years of experience at Optum, where I specialized in developing web applications. During my tenure, I contributed to various projects that enhanced healthcare technology solutions. I gained valuable experience working with modern web technologies and frameworks, collaborating in agile teams, and delivering robust solutions to meet the complex needs of the healthcare industry.</p>
+                </div>
+            </section>
 
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <div class="proj-item">
-            <p>As a software engineer at Optum, I played a key role in migrating a high-volume EDI Clearing House application from on-premises to Azure cloud. I contributed to the backend development using Java, Spring Boot, and Hibernate, focusing on migrating claim and remittance workflows to the cloud. This project significantly enhanced the scalability and efficiency of the Clearing House application in handling large volumes of EDI transactions.</p>
-        </div>
-    </section>
+            <section id="projects" class="projects">
+                <h2>Projects</h2>
+                <div class="proj-item">
+                    <p>As a software engineer at Optum, I played a key role in migrating a high-volume EDI Clearing House application from on-premises to Azure cloud. I contributed to the backend development using Java, Spring Boot, and Hibernate, focusing on migrating claim and remittance workflows to the cloud. This project significantly enhanced the scalability and efficiency of the Clearing House application in handling large volumes of EDI transactions.</p>
+                </div>
+            </section>
 
-    <section id="interests" class="interests">
-        <h2>Interests</h2>
-        <div class="int-item">
-            <p>I enjoy watching Netflix series, movies, and shopping. I'm also passionate about programming and data analysis.</p>
-        </div>
-    </section>
+            <section id="interests" class="interests">
+                <h2>Interests</h2>
+                <div class="int-item">
+                    <p>I enjoy watching Netflix series, movies, and shopping. I'm also passionate about programming and data analysis.</p>
+                </div>
+            </section>
 
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <div class="ski-item">
-            <p><strong>Languages:</strong> Python, Java, HTML, CSS.</p>
-            <p><strong>Databases:</strong> PostgreSQL, MySQL, Oracle, MongoDB.</p>
-            <p><strong>Cloud:</strong> AKS, AWS, GCP.</p>
-        </div>
-    </section>
+            <section id="skills" class="skills">
+                <h2>Skills</h2>
+                <div class="ski-item">
+                    <p><strong>Languages:</strong> Python, Java, HTML, CSS.</p>
+                    <p><strong>Databases:</strong> PostgreSQL, MySQL, Oracle, MongoDB.</p>
+                    <p><strong>Cloud:</strong> AKS, AWS, GCP.</p>
+                </div>
+            </section>
 
-    <section id="team-website" class="team-website">
-        <h2>My Team Website</h2>
-        <div class="team-item">
-            <p>Check out our team project website: <a href="https://github.com/Likitha0406/GVSU-CIS641-The-PowerPuffGirls" target="_blank">Team Project Website</a></p>
-        </div>
-    </section>
+            <section id="team-website" class="team-website">
+                <h2>My Team Website</h2>
+                <div class="team-item">
+                    <p>Check out our team project website: <a href="https://github.com/Likitha0406/GVSU-CIS641-The-PowerPuffGirls" target="_blank">Team Project Website</a></p>
+                </div>
+            </section>
 
-    <section id="project-overview" class="project-overview">
-        <h2>Project Overview</h2>
-        <div class="overview-item">
-            <p>This section provides an overview of the project goals, the technologies used, and our team's contributions to the project.</p>
-            <p>Our team focused on building a robust, scalable, and user-friendly application to handle complex user data with seamless integration across different platforms.</p>
+            <section id="project-overview" class="project-overview">
+                <h2>Project Overview</h2>
+                <div class="overview-item">
+                    <p>This section provides an overview of the project goals, the technologies used, and our team's contributions to the project.</p>
+                    <p>Our team focused on building a robust, scalable, and user-friendly application to handle complex user data with seamless integration across different platforms.</p>
+                </div>
+            </section>
         </div>
-    </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-item">
+                <p>Email: <a href="mailto:simhadrs@mail.gvsu.edu">simhadrs@mail.gvsu.edu</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/swethasarayu-simhadri-399574179/" target="_blank">LinkedIn Profile</a></p>
+            </div>
+        </section>
+    </div>
 
     <footer>
         <p>&copy; 2024 Swethasarayu Simhadri. All rights reserved.</p>
