@@ -13,7 +13,7 @@
         }
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(to right, #24C6DC, #514A9D); /* Beautiful gradient background */
+            background: linear-gradient(to right, #24C6DC, #514A9D);
             color: #fff;
         }
         header {
@@ -21,7 +21,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px 50px;
-            background-color: rgba(0, 0, 0, 0.8); /* Transparent header background */
+            background-color: rgba(0, 0, 0, 0.8);
         }
         .logo {
             font-size: 2rem;
@@ -55,16 +55,16 @@
             font-weight: 600;
             margin: 0 10px;
         }
-        .experience, .projects, .interests, .skills {
+        .experience, .projects, .interests, .skills, .team-website, .project-overview {
             padding: 50px 20px;
         }
         h2 {
             font-size: 2.5rem;
             margin-bottom: 30px;
         }
-        .exp-item, .proj-item, .int-item, .ski-item {
+        .exp-item, .proj-item, .int-item, .ski-item, .team-item, .overview-item {
             margin-bottom: 30px;
-            background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent box for experience/project sections */
+            background-color: rgba(255, 255, 255, 0.1);
             padding: 20px;
             border-radius: 15px;
         }
@@ -74,6 +74,10 @@
             background-color: rgba(0, 0, 0, 0.8);
             color: #fff;
             margin-top: 50px;
+        }
+        .contact-item a {
+            color: #24D4EA;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -85,8 +89,18 @@
             <a href="#about">About</a>
             <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
+            <a href="#team-website">Team Website</a>
+            <a href="#project-overview">Project Overview</a>
         </nav>
     </header>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-item">
+            <p>Email: <a href="mailto:simhadrs@mail.gvsu.edu">simhadrs@mail.gvsu.edu</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/swethasarayu-simhadri-399574179/" target="_blank">LinkedIn Profile</a></p>
+        </div>
+    </section>
 
     <div class="container">
         <h1>Hello, I'm Swethasarayu Simhadri</h1>
@@ -102,14 +116,14 @@
     <section id="experience" class="experience">
         <h2>Experience</h2>
         <div class="exp-item">
-            <p>I'm a software engineer with two years of experience at Optum, where I specialized in developing web applications. During my tenure, I contributed to various projects that enhanced healthcare technology solutions. My work involved designing and implementing user-friendly interfaces, optimizing backend processes, and ensuring seamless integration with existing systems. I gained valuable experience working with modern web technologies and frameworks, collaborating in agile teams, and delivering robust solutions to meet the complex needs of the healthcare industry.</p>
+            <p>I'm a software engineer with two years of experience at Optum, where I specialized in developing web applications. During my tenure, I contributed to various projects that enhanced healthcare technology solutions. I gained valuable experience working with modern web technologies and frameworks, collaborating in agile teams, and delivering robust solutions to meet the complex needs of the healthcare industry.</p>
         </div>
     </section>
 
     <section id="projects" class="projects">
         <h2>Projects</h2>
         <div class="proj-item">
-            <p>As a software engineer at Optum, I played a key role in migrating a high-volume EDI Clearing House application from on-premises to Azure cloud. This critical system processes approximately 8 million transactions daily between payer and provider systems. I contributed to the backend development using Java, Spring Boot, and Hibernate, focusing on migrating claim and remittance workflows to the cloud. I implemented a distributed logging system for the microservice architecture, utilized Azure Databricks for event streaming and reconciliation from Azure EventHub, and created PowerBI dashboards for business insights. This project significantly enhanced the scalability and efficiency of the Clearing House application in handling large volumes of EDI transactions.</p>
+            <p>As a software engineer at Optum, I played a key role in migrating a high-volume EDI Clearing House application from on-premises to Azure cloud. I contributed to the backend development using Java, Spring Boot, and Hibernate, focusing on migrating claim and remittance workflows to the cloud. This project significantly enhanced the scalability and efficiency of the Clearing House application in handling large volumes of EDI transactions.</p>
         </div>
     </section>
 
@@ -124,19 +138,25 @@
         <h2>Skills</h2>
         <div class="ski-item">
             <p><strong>Languages:</strong> Python, Java, HTML, CSS.</p>
-            <p><strong>Databases:</strong> PostgreSQL, MySQL, Oracle, MongoDB</p>
+            <p><strong>Databases:</strong> PostgreSQL, MySQL, Oracle, MongoDB.</p>
             <p><strong>Cloud:</strong> AKS, AWS, GCP.</p>
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-item">
-            <p>Email: <a href="mailto:simhadrs@mail.gvsu.edu." style="color: #24D4EA;">simhadrs@mail.gvsu.edu</a></p> <!-- Replace with your actual email -->
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/swethasarayu-simhadri-399574179/" target="_blank" style="color: #24D4EA;">LinkedIn Profile</a></p> <!-- Replace with your actual LinkedIn link -->
+    <section id="team-website" class="team-website">
+        <h2>My Team Website</h2>
+        <div class="team-item">
+            <p>Check out our team project website: <a href="https://github.com/Likitha0406/GVSU-CIS641-The-PowerPuffGirls" target="_blank">Team Project Website</a></p>
         </div>
     </section>
-    
+
+    <section id="project-overview" class="project-overview">
+        <h2>Project Overview</h2>
+        <div class="overview-item">
+            <p>This section provides an overview of the project goals, the technologies used, and our team's contributions to the project.</p>
+            <p>Our team focused on building a robust, scalable, and user-friendly application to handle complex user data with seamless integration across different platforms.</p>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2024 Swethasarayu Simhadri. All rights reserved.</p>
