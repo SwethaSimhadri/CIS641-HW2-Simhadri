@@ -7,54 +7,48 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8; /* Light background */
             margin: 0;
             padding: 0;
-            background-color: #f0f8ff; /* Light background color */
-            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Minimum height of the viewport */
         }
         .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-        }
-        header {
-            background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
-            color: white;
-            padding: 60px 20px;
+            background-color: #ffffff; /* White for the container */
             border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            transition: transform 0.2s ease-in-out;
         }
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
+        .container:hover {
+            transform: scale(1.02); /* Slightly scale on hover */
         }
-        h2 {
-            font-size: 1.8em;
-            margin: 20px 0 10px;
+        h1, h2 {
+            color: #333333; /* Dark grey for headings */
         }
-        .section {
-            background-color: #ffffff; /* White background for sections */
+        p {
+            color: #666666; /* Medium grey for paragraph text */
+            line-height: 1.6;
+        }
+        .section-box {
+            background-color: #e3f2fd; /* Light blue for section boxes */
             border-radius: 10px;
             padding: 20px;
             margin: 20px 0;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-        .section:hover {
-            transform: scale(1.02); /* Scale effect on hover */
-        }
-        p {
-            line-height: 1.6;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         footer {
-            margin-top: 30px;
+            margin-top: 20px;
             font-size: 0.9em;
-            color: #888;
+            color: #999999; /* Lighter grey for footer text */
         }
         a {
-            color: #2575fc; /* Blue link color */
-            text-decoration: none;
-            font-weight: bold;
+            color: #1976d2; /* Blue for links */
+            text-decoration: none; /* Remove underline */
         }
         a:hover {
             text-decoration: underline; /* Underline links on hover */
@@ -63,33 +57,37 @@
             border-radius: 50%; /* Circular image */
             width: 150px;
             height: 150px;
-            border: 2px solid #2575fc; /* Blue border around the image */
+            margin: 20px 0;
+            border: 2px solid #1976d2; /* Blue border around the image */
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <img src="https://via.placeholder.com/150" alt="Profile Picture"> <!-- Placeholder image -->
-            <h1>Hello, I'm Swethasarayu</h1>
-            <p>Welcome to my portfolio! I'm a passionate developer and tech enthusiast.</p>
-        </header>
-        
-        <div class="section">
+        <h1>Hello, I'm Swethasarayu</h1>
+        <p>Welcome to my portfolio! I'm a passionate developer and tech enthusiast.</p>
+        <div class="section-box">
             <h2>About Me</h2>
             <p>I am a Computer Science graduate with experience as a software engineer on multiple healthcare projects. My expertise includes Java, AKS, and SQL, with a strong focus on building efficient and scalable applications.</p>
         </div>
-        
-        <div class="section">
+        <div class="section-box">
             <h2>Interests</h2>
-            <p>I enjoy cooking, watching Netflix series, movies and shopping. My technical interests include Java programming and cloud i.e., AKS.</p>
+            <p>I enjoy cooking, watching Netflix series, movies, and shopping. My technical interests include Java programming and cloud technologies, particularly AKS.</p>
         </div>
-        
-        <div class="section">
-            <h2>Technical Background</h2>
-            <p>Languages of Interest: Python, Core Java, Data Analytics, Cloud (AKS).</p>
+        <div class="section-box">
+            <h2>Languages of Interest</h2>
+            <p>Python, Core Java, Data Analytics, Cloud (AKS).</p>
         </div>
-
+        <div class="section-box">
+            <h2>My Team Website</h2>
+            <p>Visit our team web page: <a href="https://prashanthivelpula.github.io/GVSU-CIS641-InternationalTechies/" target="_blank">International Techies</a>.</p>
+        </div>
+        <div class="section-box">
+            <h2>Project Overview</h2>
+            <p>HomeGoods Inventory Management is a web application that helps store managers manage their inventories more efficiently. 
+               It includes secure user authentication, which allows only authorized managers to log in and create accounts.
+            </p>
+        </div>
         <footer>
             <p>Thank you for viewing my portfolio!</p>
         </footer>
