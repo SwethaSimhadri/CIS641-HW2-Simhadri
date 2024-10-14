@@ -3,84 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Swethasarayu Simhadri's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f4f8; /* Light background */
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh; /* Minimum height of the viewport */
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2, h3 {
+            margin: 0;
         }
         .container {
-            background-color: #ffffff; /* White for the container */
-            border-radius: 10px;
-            padding: 30px;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            transition: transform 0.2s ease-in-out;
-        }
-        .container:hover {
-            transform: scale(1.02); /* Slightly scale on hover */
-        }
-        h1, h2 {
-            color: #333333; /* Dark grey for headings */
-        }
-        p {
-            color: #666666; /* Medium grey for paragraph text */
-            line-height: 1.6;
-        }
-        .section-box {
-            background-color: #e3f2fd; /* Light blue for section boxes */
-            border-radius: 10px;
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
             padding: 20px;
+        }
+        .section {
+            background: #fff;
             margin: 20px 0;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .contact-info {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 10px 0;
+        }
+        .skills div {
+            background: #eaeaea;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 5px;
+            flex: 1 1 30%;
+            text-align: center;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
         }
         footer {
-            margin-top: 20px;
-            font-size: 0.9em;
-            color: #999999; /* Lighter grey for footer text */
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
-        a {
-            color: #1976d2; /* Blue for links */
-            text-decoration: none; /* Remove underline */
-        }
-        a:hover {
-            text-decoration: underline; /* Underline links on hover */
-        }
-        img {
-            border-radius: 50%; /* Circular image */
-            width: 150px;
-            height: 150px;
-            margin: 20px 0;
-            border: 2px solid #1976d2; /* Blue border around the image */
+        @media (max-width: 768px) {
+            .skills {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Hello, I'm Swethasarayu</h1>
-        <p>Welcome to my portfolio! I'm a passionate developer and tech enthusiast.</p>
-        <div class="section-box">
-            <h2>About Me</h2>
-            <p>I am a Computer Science graduate with experience as a software engineer on multiple healthcare projects. My expertise includes Java, AKS, and SQL, with a strong focus on building efficient and scalable applications.</p>
-        </div>
-        <div class="section-box">
-            <h2>Interests</h2>
-            <p>I enjoy cooking, watching Netflix series, movies, and shopping. My technical interests include Java programming and cloud technologies, particularly AKS.</p>
-        </div>
-        <div class="section-box">
-            <h2>Languages of Interest</h2>
-            <p>Python, Core Java, Data Analytics, Cloud (AKS).</p>
-        </div>
-        <footer>
-            <p>Thank you for viewing my portfolio!</p>
-        </footer>
+
+<header>
+    <h1>Swethasarayu Simhadri</h1>
+    <div class="contact-info">
+        <p>Michigan, MI, US</p>
+        <p>Email: <a href="mailto:simhadrs@mail.gvsu.edu" style="color: #fff; text-decoration: underline;">simhadrs@mail.gvsu.edu</a></p>
+        <p>Phone: <a href="tel:+16167231084" style="color: #fff; text-decoration: underline;">+1(616)-723-1084</a></p>
     </div>
+</header>
+
+<div class="container">
+    <div class="section">
+        <h2>Summary</h2>
+        <p>A dedicated Computer Science student pursuing a master's degree at Grand Valley State University, seeking a Software Development position or internship as a Front-end, Back-end, or Full Stack Developer. Skilled in coding, programming, debugging, and both front-end and back-end development.</p>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <p><strong>Pursuing Master’s Degree: Applied Computer Science</strong><br>
+        Grand Valley State University, Grand Rapids, Michigan, US <br>
+        Expected Graduation: 2025</p>
+        
+        <p><strong>Bachelor’s Degree: Computer Science</strong><br>
+        KL University, Vijayawada, India <br>
+        Graduated: 2022 | CGPA: 8.5/10</p>
+    </div>
+
+    <div class="section">
+        <h2>Technical Skills</h2>
+        <div class="skills">
+            <div>Java</div>
+            <div>Python</div>
+            <div>HTML</div>
+            <div>SQL</div>
+            <div>CSS</div>
+            <div>C</div>
+            <div>Spring Boot</div>
+            <div>JavaScript</div>
+            <div>MySQL</div>
+            <div>JSP</div>
+            <div>Servlet</div>
+            <div>Git</div>
+            <div>Microsoft Office Suite</div>
+            <div>Azure Kubernetes Service</div>
+            <div>Windows</div>
+            <div>Linux</div>
+            <div>Communication</div>
+            <div>Critical Thinking</div>
+            <div>Teamwork</div>
+            <div>Problem-Solving</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Professional Experience</h2>
+        <h3>Software Engineer</h3>
+        <p><strong>Optum Global Solutions</strong><br>
+        Duration: 2 years</p>
+        <p>- Proficient in HTML, CSS, JavaScript, and Java technologies with hands-on experience in building responsive and user-friendly web applications.<br>
+        - Experienced in MySQL, querying, and optimization for efficient data storage and retrieval.<br>
+        - Developed dynamic and interactive web applications using Java Server Pages (JSP) and Servlets.<br>
+        - Utilized Spring Boot framework for rapid development of robust and scalable Java applications.<br>
+        - Adapted to both front-end and back-end development, ensuring seamless integration of user interfaces with server-side logic.<br>
+        - Communicated effectively and collaborated with cross-functional teams to achieve project goals.</p>
+    </div>
+
+    <div class="section">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Intelligent EDI</h3>
+                <p><strong>Overview:</strong> Worked on the migration of a monolithic Clearing House application from on-premises to Azure Cloud, processing a transaction volume of around 8 million per day.</p>
+                <p><strong>Highlights:</strong><br>
+                - Contributed to back-end code development using Java, Spring Boot, and Hibernate.<br>
+                - Migrated existing claim and remittance workflows to Azure Cloud.<br>
+                - Developed a distributed logging system in Microservice architecture to send log events to Splunk.<br>
+                - Utilized Azure Databricks to stream and reconcile events from Azure EventHub.<br>
+                - Created dashboards using Microsoft PowerBI for business evaluation.</p>
+            </div>
+
+            <div class="project">
+                <h3>Blood Banking System</h3>
+                <p><strong>Overview:</strong> Developed a Cloud-Based Blood Banking System for real-time searches and matching of donors with recipients during emergencies.</p>
+                <p><strong>Highlights:</strong><br>
+                - Implemented a centralized cloud database to ensure data integrity, accessibility, and scalability.<br>
+                - Enhanced user interaction and notification capabilities through mobile applications.<br>
+                - Automated alerts and notifications to streamline communication between eligible donors and recipients.<br>
+                - Focused on security and collaboration with healthcare providers for optimized blood transfusion coordination.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Swethasarayu Simhadri</p>
+</footer>
+
 </body>
 </html>
